@@ -9,9 +9,9 @@ ccache -M 100G
 export ARCH=arm64
 export KBUILD_BUILD_HOST=anoo
 export KBUILD_BUILD_USER="PentyPen"
-git clone --depth=1 https://github.com/PentyPen/android_prebuilts_clang_host_linux-x86_clang-r437112 clang
-git clone --depth=1 https://github.com/PentyPen/prebuilts_gcc_linux-x86_aarch64_aarch64-linaro-7 los-4.9-64
-git clone --depth=1 https://github.com/PentyPen/linaro_arm-linux-gnueabihf-7.5 los-4.9-32
+git clone --depth=1 https://gitlab.com/sarthakroy2002/android_prebuilts_clang_host_linux-x86_clang-r437112b clang
+git clone --depth=1 https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9 los-4.9-64
+git clone --depth=1 https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9 los-4.9-32
 
 [ -d "out" ] && rm -rf out || mkdir -p out
 
